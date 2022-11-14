@@ -1,26 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import TextField from '@mui/material/TextField';
+import TransferList from './TransferList';
+import { Grid, Button } from '@mui/material';
+import { ListItemType } from './types'
+const App = () => {
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [description, setDescription] = useState('Task description')
+  const [item, setItem ] = useState<ListItemType | null>(null)
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setDescription(event.target.value);
+  };
+
+  const addNewItem = () => {
+    if(item){
+      setItem({value: item.value+1, description})
+    }else{
+      setItem({value: 0, description})
+    }
+  }
+
+  return(
+    <Grid container spacing={1} justifyContent="center" alignItems="center">
+    <Grid item>
+      <TextField id="filled-basic" label="Filled" variant="filled" 
+        value={description}
+        onChange={handleChange}
+      />
+      <Button variant="text" onClick={addNewItem}>Add Task</Button>
+    </Grid>
+    <Grid>
+     <TransferList newItem={item}/>
+    </Grid>
+  </Grid>
+  )
 }
 
 export default App;
