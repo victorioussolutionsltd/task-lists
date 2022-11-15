@@ -20,8 +20,9 @@ const MainWrapper = styled.div`
 `;
 
 function Container() {
-
-  const { addNewItem, checked } = React.useContext(TasksContext) as TasksContextType;
+  const { addNewItem, checked } = React.useContext(
+    TasksContext
+  ) as TasksContextType;
 
   const [description, setDescription] = useState('Task description');
   const [helperText, setHelperText] = useState('');
@@ -39,32 +40,32 @@ function Container() {
     }
 
     if (checked.length > 0) {
-      addNewItem({ value: checked[checked.length-1].value + 1, description });
+      addNewItem({ value: checked[checked.length - 1].value + 1, description });
     } else {
       addNewItem({ value: 0, description });
     }
   };
 
   return (
-      <MainWrapper>
-        <InputWrapper>
-          <TextField
-            id="filled-basic"
-            label="Filled"
-            variant="filled"
-            value={description}
-            onChange={handleChange}
-            helperText={helperText}
-          />
-          <Button variant="text" onClick={addItem}>
-            Add Task
-          </Button>
-        </InputWrapper>
-        <br />
-        <br />
+    <MainWrapper>
+      <InputWrapper>
+        <TextField
+          id="filled-basic"
+          label="Filled"
+          variant="filled"
+          value={description}
+          onChange={handleChange}
+          helperText={helperText}
+        />
+        <Button variant="text" onClick={addItem}>
+          Add Task
+        </Button>
+      </InputWrapper>
+      <br />
+      <br />
 
-        <TransferList />
-      </MainWrapper>
+      <TransferList />
+    </MainWrapper>
   );
 }
 

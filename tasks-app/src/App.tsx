@@ -5,8 +5,8 @@ import TasksProvider from './context/TasksContext';
 function App() {
   return (
     <TasksProvider>
-      <Container/>
+      <Container />
     </TasksProvider>
-  )
+  );
 }
 export default App;

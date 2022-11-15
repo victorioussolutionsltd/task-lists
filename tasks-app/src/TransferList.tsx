@@ -6,8 +6,16 @@ import { TasksContextType } from './types';
 import { TasksContext } from './context/TasksContext';
 
 export default function TransferList() {
-
-  const { checked, setChecked, right, left, handleCheckedLeft, handleCheckedRight, rightChecked, leftChecked } = React.useContext(TasksContext) as TasksContextType;
+  const {
+    checked,
+    setChecked,
+    right,
+    left,
+    handleCheckedLeft,
+    handleCheckedRight,
+    rightChecked,
+    leftChecked,
+  } = React.useContext(TasksContext) as TasksContextType;
 
   return (
     <Grid container spacing={2} justifyContent="center" alignItems="center">

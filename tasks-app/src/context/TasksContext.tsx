@@ -1,18 +1,18 @@
-import React, { useState, useMemo} from 'react';
+import React, { useState, useMemo } from 'react';
 import { intersection, not } from '../helpers/intersection';
 import { ListItemType, TasksContextType } from '../types';
 
 export const TasksContext = React.createContext<TasksContextType | null>(null);
 
-function TasksProvider ({ children } : {children: React.ReactNode})  {
-  const [checked, setChecked] = useState< ListItemType[]>([]);
-  const [left, setLeft] = useState< ListItemType[]>([]);
-  const [right, setRight] = useState< ListItemType[]>([]);
+function TasksProvider({ children }: { children: React.ReactNode }) {
+  const [checked, setChecked] = useState<ListItemType[]>([]);
+  const [left, setLeft] = useState<ListItemType[]>([]);
+  const [right, setRight] = useState<ListItemType[]>([]);
 
   const leftChecked = intersection(checked, left);
   const rightChecked = intersection(checked, right);
 
-  const addNewItem = (newItem : ListItemType) => {
+  const addNewItem = (newItem: ListItemType) => {
     if (newItem) {
       const newLeft = [...left, newItem];
       setLeft(newLeft);
@@ -34,16 +34,6 @@ function TasksProvider ({ children } : {children: React.ReactNode})  {
   const globalContextValue = useMemo(
     () => ({
       addNewItem,
-        checked,
-        setChecked,
-        handleCheckedRight,
-        handleCheckedLeft,
-        right,
-        left,
-        rightChecked,
-        leftChecked
-    }),
-    [addNewItem,
       checked,
       setChecked,
       handleCheckedRight,
@@ -51,16 +41,26 @@ function TasksProvider ({ children } : {children: React.ReactNode})  {
       right,
       left,
       rightChecked,
-      leftChecked]
+      leftChecked,
+    }),
+    [
+      addNewItem,
+      checked,
+      setChecked,
+      handleCheckedRight,
+      handleCheckedLeft,
+      right,
+      left,
+      rightChecked,
+      leftChecked,
+    ]
   );
 
   return (
-    <TasksContext.Provider
-      value={globalContextValue}
-    >
+    <TasksContext.Provider value={globalContextValue}>
       {children}
     </TasksContext.Provider>
   );
-};
+}
 
 export default TasksProvider;
