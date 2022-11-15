@@ -16,8 +16,7 @@ You will also see any lint errors in the console.
 
 ### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the jest tests.
 
 ### `yarn build`
 
@@ -39,8 +38,18 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Q&A
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+How long did you spend on your solution?
+* How do you build and run your solution? 
+  - It took about eight hours- primarily due to fixing some incompatibility TS issues (linter, prettier, etc.). 
+* What technical and functional assumptions did you make when implementing
+your solution?
+  - To have modular code that uses the latest GUI standards (MUI).
+* Briefly explain your technical design and why you think it is the best
+approach to this problem.
+  - I started by modifying the already existing example so it meets the requirements. Then, I decided to clean up the code and move the logic into context.
+* If you were unable to complete any user stories, outline why and how would
+you have liked to implement them.
+  - The required functionality is there. Additionally, I could add a Storybook, more tests and better implement the website's responsiveness. 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
