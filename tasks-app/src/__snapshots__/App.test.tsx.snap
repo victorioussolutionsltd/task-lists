@@ -1,0 +1,210 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="sc-gswNZR eIevEh"
+>
+  <div
+    className="sc-bcXHqe gLehBq"
+  >
+    <div
+      className="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
+    >
+      <label
+        className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-1sumxir-MuiFormLabel-root-MuiInputLabel-root"
+        data-shrink={true}
+        htmlFor="outlined-required"
+        id="outlined-required-label"
+      >
+        Description
+      </label>
+      <div
+        className="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root"
+        onClick={[Function]}
+      >
+        <input
+          aria-invalid={false}
+          autoFocus={false}
+          className="MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
+          disabled={false}
+          id="outlined-required"
+          onAnimationStart={[Function]}
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          required={false}
+          type="text"
+          value="Task"
+        />
+        <fieldset
+          aria-hidden={true}
+          className="MuiOutlinedInput-notchedOutline css-1d3z3hw-MuiOutlinedInput-notchedOutline"
+        >
+          <legend
+            className="css-14lo706"
+          >
+            <span>
+              Description
+            </span>
+          </legend>
+        </fieldset>
+      </div>
+    </div>
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium css-1e6y48t-MuiButtonBase-root-MuiButton-root"
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onContextMenu={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      Add Task
+    </button>
+  </div>
+  <br />
+  <br />
+  <div
+    className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-6s1xft-MuiGrid-root"
+  >
+    <div
+      className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+    >
+      <div
+        className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-bhp9pd-MuiPaper-root-MuiCard-root"
+      >
+        <div
+          className="MuiCardHeader-root css-e6s3aq-MuiCardHeader-root"
+        >
+          <div
+            className="MuiCardHeader-content css-1qbkelo-MuiCardHeader-content"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-1qvr50w-MuiTypography-root"
+            >
+              Pending
+            </span>
+            <span
+              className="MuiTypography-root MuiTypography-body1 MuiCardHeader-subheader css-nrdprl-MuiTypography-root"
+            >
+              0/0 selected
+            </span>
+          </div>
+        </div>
+        <hr
+          className="MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root"
+        />
+        <div
+          className="MuiList-root MuiList-padding MuiList-dense css-abna4k-MuiList-root"
+          role="list"
+        >
+          <li
+            className="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-6lnq02-MuiListItem-root"
+            disabled={false}
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+    >
+      <div
+        className="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-column css-t0zib5-MuiGrid-root"
+      >
+        <button
+          aria-label="move selected right"
+          className="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall Mui-disabled MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall css-ak74bx-MuiButtonBase-root-MuiButton-root"
+          disabled={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={-1}
+          type="button"
+        >
+          &gt;
+        </button>
+        <button
+          aria-label="move selected left"
+          className="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall Mui-disabled MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeSmall MuiButton-outlinedSizeSmall css-ak74bx-MuiButtonBase-root-MuiButton-root"
+          disabled={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onContextMenu={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={-1}
+          type="button"
+        >
+          &lt;
+        </button>
+      </div>
+    </div>
+    <div
+      className="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+    >
+      <div
+        className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-bhp9pd-MuiPaper-root-MuiCard-root"
+      >
+        <div
+          className="MuiCardHeader-root css-e6s3aq-MuiCardHeader-root"
+        >
+          <div
+            className="MuiCardHeader-content css-1qbkelo-MuiCardHeader-content"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-h5 MuiCardHeader-title css-1qvr50w-MuiTypography-root"
+            >
+              Completed
+            </span>
+            <span
+              className="MuiTypography-root MuiTypography-body1 MuiCardHeader-subheader css-nrdprl-MuiTypography-root"
+            >
+              0/0 selected
+            </span>
+          </div>
+        </div>
+        <hr
+          className="MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root"
+        />
+        <div
+          className="MuiList-root MuiList-padding MuiList-dense css-abna4k-MuiList-root"
+          role="list"
+        >
+          <li
+            className="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-6lnq02-MuiListItem-root"
+            disabled={false}
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
