@@ -20,7 +20,7 @@ const MainWrapper = styled.div`
 `;
 
 function Container() {
-  const { addNewItem, checked } = React.useContext(
+  const { addNewItem, left, right } = React.useContext(
     TasksContext
   ) as TasksContextType;
 
@@ -39,11 +39,9 @@ function Container() {
       return;
     }
 
-    if (checked.length > 0) {
-      addNewItem({ value: checked[checked.length - 1].value + 1, description });
-    } else {
-      addNewItem({ value: 0, description });
-    }
+    const noOfAllItems = left.length + right.length;
+
+    addNewItem({ value: noOfAllItems, description });
   };
 
   return (
