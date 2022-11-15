@@ -9,6 +9,8 @@ import { TasksContext } from './context/TasksContext';
 
 const InputWrapper = styled.div`
   display: flex;
+  padding: 25px;
+  gap: 25px;
   justify-content: center;
 `;
 
@@ -24,7 +26,7 @@ function Container() {
     TasksContext
   ) as TasksContextType;
 
-  const [description, setDescription] = useState('Task description');
+  const [description, setDescription] = useState('Task');
   const [helperText, setHelperText] = useState('');
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (event.target.value.length > 0) {
@@ -48,9 +50,9 @@ function Container() {
     <MainWrapper>
       <InputWrapper>
         <TextField
-          id="filled-basic"
-          label="Filled"
-          variant="filled"
+          id="outlined-required"
+          label="Description"
+          variant="outlined"
           value={description}
           onChange={handleChange}
           helperText={helperText}
