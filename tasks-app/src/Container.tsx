@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import TextField from '@mui/material/TextField';
 import { Button } from '@mui/material';
 import styled from 'styled-components';
-import TransferList from './TransferList';
+import TransferList from './components/TransferList';
 import { TasksContextType } from './types';
 
 import { TasksContext } from './context/TasksContext';

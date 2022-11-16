@@ -2,8 +2,8 @@ import React from 'react';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
 import CustomList from './CustomList';
-import { TasksContextType } from './types';
-import { TasksContext } from './context/TasksContext';
+import { TasksContextType } from '../types';
+import { TasksContext } from '../context/TasksContext';
 
 export default function TransferList() {
   const {

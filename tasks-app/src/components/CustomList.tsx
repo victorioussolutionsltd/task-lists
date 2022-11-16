@@ -7,8 +7,8 @@ import ListItemText from '@mui/material/ListItemText';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import Checkbox from '@mui/material/Checkbox';
 import Divider from '@mui/material/Divider';
-import { numberOfChecked } from './helpers/intersection';
-import { ListItemType } from './types';
+import { numberOfChecked } from '../helpers/intersection';
+import { ListItemType } from '../types';
 
 function CustomList({
   title,
